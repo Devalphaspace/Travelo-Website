@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import { BsGlobeAmericas } from "react-icons/bs";
 import { BiWalk } from "react-icons/bi";
@@ -52,7 +52,7 @@ const TopValues = () => {
         {data?.map((i) => (
           <div
             key={i.id}
-            className="card  transition ease-in-out delay-75 cursor-pointer h-[320px] shadow-lg w-full flex items-center flex-col gap-3 p-3 text-center justify-center"
+            className="card  transition ease-in-out delay-75 cursor-pointer h-[320px] hover:shadow-lg w-full flex items-center flex-col gap-3 p-3 text-center justify-center"
           >
             <span className=" border p-4 rounded-md">{i.icon}</span>
             <h2 className="text-2xl font-semibold">{i.title}</h2>
@@ -65,14 +65,21 @@ const TopValues = () => {
       </div>
 
       <div className="video relative rounded-xl overflow-hidden w-full h-[480px] mt-6">
-        <video
+        {/* <video
           className="h-full w-full object-cover"
           src={vid}
           alt="video"
-          autoPlay // Add the autoplay attribute
-          loop // Add the loop attribute
-          controls
-        />
+        
+        /> */}
+
+        <video
+          loop
+          autoPlay
+          muted
+          className="absolute z-[-1] h-full w-full object-cover"
+        >
+          <source src={vid} />
+        </video>
       </div>
     </div>
   );

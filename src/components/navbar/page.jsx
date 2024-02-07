@@ -51,7 +51,11 @@ const Navbar = () => {
             <li className="font-semibold cursor-pointer">Trip Plans</li>
             <li className="font-semibold cursor-pointer">About Us</li>
             <li>
-              <button className="bg-[#ff473f] p-2 px-6 rounded-3xl font-semibold cursor-pointer">
+              <button className={`bg-[#ff473f] p-2 px-6 rounded-3xl font-semibold cursor-pointer ${
+                scrolled
+                  ? "text-white "
+                  : ""
+              }`}>
                 Get started
               </button>
             </li>

@@ -8,7 +8,7 @@ import Subscribe from './../components/subscribe/page';
 
 const App = () => {
   return (
-    <div className="w-full mx-auto min-h-[100vh]">
+    <div className="w-full mx-auto min-h-[100vh]" >
       <Hero />
       <Popular />
       <TopValues />

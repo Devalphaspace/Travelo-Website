@@ -4,9 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* * {
-  transition: all 0.2s ease-in-out;
-} */
 body {
   width: 100%;
   margin: 0 auto !important;
